@@ -1,38 +1,36 @@
-div .NavigationBar{
-    width: 100%;
-    display: block;
+div .navigationBar {
+  width: 100%;
+  display: block;
 }
 
-div .header{
-    background-color: black;
-    height: 30px;
+div .navigationBar .bottomNavigation {
+  background-color: black;
+  height: 5.5em;
+  align-items: baseline;
 }
 
-div .NavigationBar .BottomNavigation{
-    background-color: black;
+div .navigationBar .bottomNavigation .nav-item {
+  color: grey;
 }
 
-@media(max-width:700px) {
-    div.NavigationBar{
-        position: fixed;
-        bottom: 0;
-    }
-    div.header{
-        position: fixed;
-        bottom: 0;
-    }
-    div .backgroundColor{
-        background-color: black;
-        position: fixed;
-        z-index: -1;
-        bottom: 50px;
-        left: 47.5%;
-        height: 17px;
-        width: 5%;
-    }
+div .navigationBar .bottomNavigation .nav-item.active {
+  color: rgb(193, 113, 255);
 }
 
-div .HomeContainer{
-    position: relative;
+div .navigationBar .bottomNavigation .nav-item .addIcon {
+  font-size: 5em;
+  background-color: black;
+  border-radius: 50%;
 }
 
+@media screen and (max-width: 500px) {
+  div.navigationBar {
+    position: fixed;
+    bottom: 0;
+  }
+  div .navigationBar .bottomNavigation {
+    height: 3em;
+    align-items: end;
+    padding-bottom: 1em;
+  }
+}
