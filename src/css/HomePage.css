@@ -1,0 +1,36 @@
+div .navigationBar {
+  width: 100%;
+  display: block;
+}
+
+div .navigationBar .bottomNavigation {
+  background-color: black;
+  height: 5.5em;
+  align-items: baseline;
+}
+
+div .navigationBar .bottomNavigation .nav-item {
+  color: grey;
+}
+
+div .navigationBar .bottomNavigation .nav-item.active {
+  color: rgb(193, 113, 255);
+}
+
+div .navigationBar .bottomNavigation .nav-item .addIcon {
+  font-size: 5em;
+  background-color: black;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  div.navigationBar {
+    position: fixed;
+    bottom: 0;
+  }
+  div .navigationBar .bottomNavigation {
+    height: 3em;
+    align-items: end;
+    padding-bottom: 1em;
+  }
+}
